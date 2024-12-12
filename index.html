@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Поиск контрафактной продукции</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" 
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="header-inner">
+      <img src="img/Logo.png" alt="Лого">
+      <a class="cta-link" href="#form-section">Отправьте заявку</a>
+    </div>
+    <div class="hero-content">
+      <h1>Защитите свой бренд от подделок</h1>
+      <p class="subtitle">Вы узнаёте о всех случаях несанкционированного использования вашего товарного знака на маркетплейсах ещё до того, как они нанесут урон. Забудьте о ручном поиске – наш сервис работает за вас 24/7, предоставляя юридически значимые доказательства для быстрого пресечения нарушений.</p>
+      <a class="cta-button" href="#form-section">Отправьте заявку – мы свяжемся с вами в течение 24 часов и предоставим персональную консультацию</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="benefits">
+      <h2>Почему именно наш сервис?</h2>
+      <ul class="benefits-list">
+        <li><strong>Автоматический поиск товаров, логотипов и товарных знаков:</strong> Вы тратите ноль времени на ручной мониторинг – система сама находит нарушителей.</li>
+        <li><strong>Надёжная защита:</strong> Вы своевременно получаете уведомления о контрафакте и можете оперативно реагировать.</li>
+        <li><strong>Юридически значимые доказательства:</strong> Мы предоставляем материалы, готовые для использования вашими юристами или для предоставления службе поддержки маркетплейсов.</li>
+        <li><strong>Автоматические письма маркетплейсам:</strong> Вы сразу отправляете аргументированные запросы на удаление незаконных товаров, не занимаясь бюрократией.</li>
+        <li><strong>Без скрытых комиссий:</strong> Все взысканные суммы остаются у вас, а оплата – прозрачна и понятна.</li>
+      </ul>
+    </section>
+
+    <section class="description">
+      <h2>Простота и прозрачность для вашего бизнеса</h2>
+      <p>Вы фокусируетесь на развитии своего бренда, пока наш сервис защищает его от нарушителей. Никакой лишней суеты – только понятная функциональность и чёткие результаты.</p>
+    </section>
+
+    <section id="form-section" class="form-section">
+      <h2>Оставьте заявку</h2>
+      <p>Заполните форму – мы свяжемся с вами в течение 24 часов и предоставим персональную консультацию по защите вашего бренда.</p>
+      <form action="https://formspree.io/f/xkgnapjq" method="POST">
+        <label for="company">Название компании или бренда</label>
+        <input type="text" id="company" name="company" placeholder="Например: BrandName" required>
+
+        <label for="email">Ваш Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="name">Ваше имя</label>
+        <input type="name" id="name" name="name" placeholder="Иван Иванов" required>
+        
+        <label for="phone">Ваш телефон</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
+
+        <label for="description">Краткое описание ситуации</label>
+        <textarea id="description" name="description" rows="5" placeholder="Опишите, в чём именно нужна помощь..." required></textarea>
+
+        <button type="submit">Отправьте заявку – мы свяжемся с вами в течение 24 часов</button>
+        <p class="microcopy">Мы не рассылаем спам. Вся информация строго конфиденциальна.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Find Logo. Все права защищены.</p>
+  </footer>
+</body>
+</html>
