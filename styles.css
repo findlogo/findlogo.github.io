@@ -193,13 +193,12 @@ button:hover {
 
 /* Выравнивание чекбокса и текста на одной линии */
 .consent {
-  display: flex;
-  align-items: center; /* выравнивание по центру по вертикали */
+  display: flex; /* или display: flex; если нужно блочное выравнивание */
+  align-items: center; /* центрирует по вертикали все дочерние элементы */
 }
 
 .consent input[type="checkbox"] {
   margin-right: 10px; /* отступ между чекбоксом и текстом */
-  vertical-align: middle; /* доп. выравнивание по базовой линии текста */
 }
 
 .consent label {
