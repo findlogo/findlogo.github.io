@@ -201,6 +201,13 @@ button:hover {
   margin-right: 10px; /* отступ между чекбоксом и текстом */
 }
 
+input[type="checkbox"] {
+  width: auto;     /* Отменяем width: 100% для чекбоксов */
+  height: auto;    /* Чтобы не растягивался по вертикали */
+  margin: 0 10px 0 0; /* Добавляем отступ справа, если нужно */
+  vertical-align: middle; /* По вертикали по центру относительно текста */
+}
+
 .consent label {
   vertical-align: middle;
   display: inline-block;
