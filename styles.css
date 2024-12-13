@@ -191,6 +191,22 @@ button:hover {
   text-align: center;
 }
 
+/* Выравнивание чекбокса и текста на одной линии */
+.consent {
+  display: flex;
+  align-items: center; /* выравнивание по центру по вертикали */
+}
+
+.consent input[type="checkbox"] {
+  margin-right: 10px; /* отступ между чекбоксом и текстом */
+  vertical-align: middle; /* доп. выравнивание по базовой линии текста */
+}
+
+.consent label {
+  vertical-align: middle;
+  display: inline-block;
+}
+
 /* Подвал */
 footer {
   background-color: #f0f0f0;
@@ -231,4 +247,4 @@ footer {
   .header-inner img {
     max-height: 40px; /* Уменьшение логотипа для мобильных */
   }
-}  
+}
