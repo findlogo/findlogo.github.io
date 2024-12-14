@@ -19,6 +19,22 @@
       webvisor: true
     });
   </script>
+
+<script>
+  // Проверяем, был ли уже выполнен авторедирект
+  if (!localStorage.getItem('languageRedirectDone')) {
+    const userLang = navigator.language || navigator.userLanguage;
+    if (userLang && !userLang.startsWith('ru')) {
+      // Устанавливаем флаг, чтобы больше не редиректить
+      localStorage.setItem('languageRedirectDone', 'true');
+      // Редиректим на английскую версию
+      window.location.href = 'index-en.html';
+    } else {
+      // Язык русский или локально флаг уже стоит (ничего не делаем, просто показываем страницу)
+    }
+  }
+</script>
+
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/99197371" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript>
@@ -53,6 +69,8 @@
   "description": "FindLogo помогает владельцам брендов находить контрафактную продукцию на маркетплейсах."
 }
 </script>
+
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,16 +83,22 @@
     <div class="container">
       <div class="header-inner">
         <img src="img/Logo.png" alt="Лого">
-        <a class="cta-link" href="#form-section">Отправьте заявку</a>
+        <div class="header-right">
+          <a class="cta-link" href="#form-section">Отправьте заявку</a>
+          <div class="language-switcher">
+            <select id="language-select" onchange="changeLanguage()">
+              <option value="index.html" selected>RU</option>
+              <option value="index-en.html">EN</option>
+            </select>
+          </div>
+        </div>
       </div>
       <div class="hero-content">
         <h1>&#x1F44B; Скажите "до свидания" подделкам и контрафакту.</h1>
         <p class="subtitle">Вы узнаёте о всех случаях несанкционированного использования вашего бренда, логотипа или товарного знака на
           маркетплейсах ещё до того, как они нанесут урон. Забудьте о ручном поиске – наш сервис работает за вас 24/7,
           предоставляя юридически значимые доказательства для быстрого пресечения нарушений.</p>
-        <a class="cta-button" href="#form-section">Отправьте заявку – мы свяжемся с вами в течение 24 часов и
-          предоставим
-          персональную консультацию</a>
+        <a class="cta-button" href="#form-section">Отправьте заявку – мы свяжемся в течение 24 часов и персонально проконсультируем</a>
       </div>
     </div>
   </header>
@@ -160,6 +184,14 @@
       return true; // разрешает отправку формы
     }
   </script>
+
+<script>
+  function changeLanguage() {
+    const select = document.getElementById('language-select');
+    const selectedValue = select.value;
+    window.location.href = selectedValue;
+  }
+</script>
 </body>
 
 </html>

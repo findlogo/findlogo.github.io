@@ -13,6 +13,27 @@ h1, h2 {
   line-height: 1.3;
 }
 
+.language-switcher {
+  display: inline-block; /* чтобы переключатель шел в одну линию с другими элементами */
+  margin-left: 20px; /* отступ слева, при необходимости */
+}
+
+.language-switcher select {
+  background: #007BFF; /* Цвет фона, как у кнопки */
+  color: #fff; /* Белый текст */
+  font-size: 1em;
+  border: 2px solid #fff; /* Белая рамка */
+  border-radius: 4px; /* Закруглённые углы */
+  padding: 8px 16px; /* Пространство внутри */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.language-switcher select:hover {
+  background: #fff;
+  color: #007BFF;
+}
+
 p {
   line-height: 1.6;
   margin: 0 0 20px;
@@ -22,27 +43,40 @@ p {
 .container {
   max-width: 900px; /* Фиксированная ширина для всех секций */
   margin: 0 auto; /* Центрирование */
-  padding: 0 20px; /* Горизонтальные отступы */
+  padding: 0 60px; /* Горизонтальные отступы */
 }
 
 /* Шапка / Hero */
 .hero {
   background: #007BFF;
   color: #fff;
-  padding: 30px 0; /* Верхние и нижние отступы */
+  padding: 60px 20px; /* Верхние и нижние отступы */
   position: relative;
 }
 
 .header-inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* По центру по вертикали */
+  padding: 20px;
 }
 
 .header-inner img {
-  max-height: 200px; /* Уменьшенная высота логотипа */
+  max-height: 200px; /* Было 200px, теперь меньше */
   height: auto;
   width: auto;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Уменьшите расстояние, было 20px */
+}
+
+/* Удалите или закомментируйте margin-left у .language-switcher */
+.language-switcher {
+  display: inline-block; /* Можно оставить, чтобы блок не растягивался */
+  /* margin-left: 20px; Удаляем эту строку */
 }
 
 .cta-link {
@@ -50,8 +84,9 @@ p {
   text-decoration: none;
   font-weight: 600;
   border: 2px solid #fff;
-  padding: 8px 16px;
+  padding: 8px 20px;
   border-radius: 4px;
+  /* Можете добавить margin или другие стили при необходимости */
 }
 
 .cta-link:hover {
@@ -72,7 +107,8 @@ p {
   font-weight: 400;
   font-size: 1.1em;
   max-width: 700px;
-  margin: 0 auto 20px;
+  margin: 0 auto 40px;
+  padding: 20px;
   text-align: left;
 }
 

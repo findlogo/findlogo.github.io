@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(99197371, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+
+<script>
+  // Determine user's language
+  const userLang = navigator.language || navigator.userLanguage;
+
+  // If language is not Russian, redirect to the English version
+  if (userLang && !userLang.startsWith('ru')) {
+    window.location.href = 'index-en.html';
+  }
+</script>
+
+
+
+
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/99197371" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Basic meta tags -->
+  <title>FindLogo - Protecting Your Brand from Counterfeits</title>
+  <meta name="description"
+    content="FindLogo helps brand owners find counterfeit products, protect reputation, and achieve justice on marketplaces.">
+  <meta name="keywords"
+    content="counterfeit, brand protection, trademark, marketplace monitoring, brand, logo, fake">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FindLogo - Protecting Your Brand from Counterfeits">
+  <meta property="og:description"
+    content="FindLogo helps brand owners find counterfeit products and protect their reputation.">
+  <meta property="og:image" content="https://findlogo.github.io/images/logo.png">
+  <meta property="og:url" content="https://findlogo.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FindLogo",
+  "url": "https://findlogo.github.io/",
+  "logo": "https://findlogo.github.io/images/logo.png",
+  "description": "FindLogo helps brand owners find counterfeit products on marketplaces."
+}
+</script>
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="header-inner">
+        <img src="img/Logo.png" alt="Logo">
+        <div class="header-right">
+          <a class="cta-link" href="#form-section">Submit a Request</a>
+          <div class="language-switcher">
+            <select id="language-select" onchange="changeLanguage()">
+              <option value="index.html">RU</option>
+              <option value="index-en.html" selected>EN</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <h1>&#x1F44B; Say "goodbye" to fakes and counterfeits.</h1>
+        <p class="subtitle">You will be informed about every case of unauthorized use of your brand, logo, or trademark on marketplaces before they cause damage. Forget about manual searches – our service works for you 24/7, providing legally significant evidence for the swift suppression of violations.</p>
+        <a class="cta-button" href="#form-section">Submit a request – we will contact you within 24 hours and provide a personalized consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="benefits">
+      <div class="container">
+        <h2>Why choose our service?</h2>
+        <ul class="benefits-list">
+          <li><strong>&#x2699;&#xFE0F; Automated search for products, logos, and trademarks:</strong> You spend zero time on manual monitoring – the system finds violators on its own.</li>
+          <li><strong>&#x1F6E1;&#xFE0F; Reliable protection:</strong> You receive timely notifications about counterfeits and can react promptly.</li>
+          <li><strong>&#x2696;&#xFE0F; Legally significant evidence:</strong> We provide materials ready for use by your lawyers or for submission to marketplace support teams.</li>
+          <li><strong>&#x2709;&#xFE0F; Automatic emails to marketplaces:</strong> You immediately send well-grounded requests to remove illegal products without dealing with bureaucracy.</li>
+          <li><strong>&#x1F4B5;No hidden fees:</strong> All collected amounts remain with you, and the payment terms are transparent and clear.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="description">
+      <div class="container">
+        <h2>Simplicity and transparency for your business</h2>
+        <p>You focus on developing your brand while our service protects it from violators. No unnecessary hassle – only understandable functionality and clear results.</p>
+      </div>
+    </section>
+
+    <section id="form-section" class="form-section">
+      <div class="container">
+        <h2>Leave a request</h2>
+        <p>Fill out the form – we will contact you within 24 hours and provide a personalized consultation on protecting your brand.</p>
+        <form action="https://formspree.io/f/xkgnapjq" method="POST">
+          <label for="company">Company or brand name</label>
+          <input type="text" id="company" name="company" placeholder="For example: BrandName" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="name">Your Name</label>
+          <input type="name" id="name" name="name" placeholder="Ivan Ivanov" required>
+
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
+
+          <label for="description">Brief description of the situation</label>
+          <textarea id="description" name="description" rows="5" placeholder="Describe what exactly you need help with..." required></textarea>
+
+            <div class="consent">
+              <label>
+                <input type="checkbox" id="consent-checkbox" name="consent" required>
+                I give my consent to the processing of personal data and have read the 
+                <a href="privacypolicy.pdf" target="_blank">Privacy Policy</a>.
+              </label>
+            </div>
+
+
+          <button type="submit">Submit a request – we will contact you within 24 hours</button>
+          <p class="microcopy">We do not send spam. All information is strictly confidential.</p>
+        </form>
+    </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Find Logo. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function checkConsent() {
+      const consentCheckbox = document.getElementById('consent-checkbox');
+      if (!consentCheckbox.checked) {
+        alert('Please give your consent to personal data processing to submit the form.');
+        return false; // cancels form submission
+      }
+      return true; // allows form submission
+    }
+  </script>
+  <script>
+    function changeLanguage() {
+      const select = document.getElementById('language-select');
+      const selectedValue = select.value;
+      window.location.href = selectedValue;
+    }
+  </script>>
+</body>
+
+</html>
