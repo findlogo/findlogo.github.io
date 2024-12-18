@@ -20,20 +20,20 @@
     });
   </script>
 
-<script>
-  // Проверяем, был ли уже выполнен авторедирект
-  if (!localStorage.getItem('languageRedirectDone')) {
-    const userLang = navigator.language || navigator.userLanguage;
-    if (userLang && !userLang.startsWith('ru')) {
-      // Устанавливаем флаг, чтобы больше не редиректить
-      localStorage.setItem('languageRedirectDone', 'true');
-      // Редиректим на английскую версию
-      window.location.href = 'index-en.html';
-    } else {
-      // Язык русский или локально флаг уже стоит (ничего не делаем, просто показываем страницу)
+  <script>
+    // Проверяем, был ли уже выполнен авторедирект
+    if (!localStorage.getItem('languageRedirectDone')) {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang && !userLang.startsWith('ru')) {
+        // Устанавливаем флаг, чтобы больше не редиректить
+        localStorage.setItem('languageRedirectDone', 'true');
+        // Редиректим на английскую версию
+        window.location.href = 'index-en.html';
+      } else {
+        // Язык русский или локально флаг уже стоит (ничего не делаем, просто показываем страницу)
+      }
     }
-  }
-</script>
+  </script>
 
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/99197371" style="position:absolute; left:-9999px;" alt="" /></div>
@@ -76,6 +76,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -95,10 +99,12 @@
       </div>
       <div class="hero-content">
         <h1>&#x1F44B; Скажите "до свидания" подделкам и контрафакту.</h1>
-        <p class="subtitle">Вы узнаёте о всех случаях несанкционированного использования вашего бренда, логотипа или товарного знака на
+        <p class="subtitle">Вы узнаёте о всех случаях несанкционированного использования вашего бренда, логотипа или
+          товарного знака на
           маркетплейсах ещё до того, как они нанесут урон. Забудьте о ручном поиске – наш сервис работает за вас 24/7,
           предоставляя юридически значимые доказательства для быстрого пресечения нарушений.</p>
-        <a class="cta-button" href="#form-section">Отправьте заявку – мы свяжемся в течение 24 часов и персонально проконсультируем</a>
+        <a class="cta-button" href="#form-section">Отправьте заявку – мы свяжемся в течение 24 часов и персонально
+          проконсультируем</a>
       </div>
     </div>
   </header>
@@ -108,15 +114,20 @@
       <div class="container">
         <h2>Почему именно наш сервис?</h2>
         <ul class="benefits-list">
-          <li><strong>&#x2699;&#xFE0F; Автоматический поиск товаров, логотипов и товарных знаков:</strong> Вы тратите ноль времени на
+          <li><strong>&#x2699;&#xFE0F; Автоматический поиск товаров, логотипов и товарных знаков:</strong> Вы тратите
+            ноль времени на
             ручной мониторинг – система сама находит нарушителей.</li>
-          <li><strong>&#x1F6E1;&#xFE0F; Надёжная защита:</strong> Вы своевременно получаете уведомления о контрафакте и можете оперативно
+          <li><strong>&#x1F6E1;&#xFE0F; Надёжная защита:</strong> Вы своевременно получаете уведомления о контрафакте и
+            можете оперативно
             реагировать.</li>
-          <li><strong>&#x2696;&#xFE0F; Юридически значимые доказательства:</strong> Мы предоставляем материалы, готовые для использования
+          <li><strong>&#x2696;&#xFE0F; Юридически значимые доказательства:</strong> Мы предоставляем материалы, готовые
+            для использования
             вашими юристами или для предоставления службе поддержки маркетплейсов.</li>
-          <li><strong>&#x2709;&#xFE0F; Автоматические письма маркетплейсам:</strong> Вы сразу отправляете аргументированные запросы на
+          <li><strong>&#x2709;&#xFE0F; Автоматические письма маркетплейсам:</strong> Вы сразу отправляете
+            аргументированные запросы на
             удаление незаконных товаров, не занимаясь бюрократией.</li>
-          <li><strong>&#x1F4B5;Без скрытых комиссий:</strong> Все взысканные суммы остаются у вас, а оплата – прозрачна и
+          <li><strong>&#x1F4B5;Без скрытых комиссий:</strong> Все взысканные суммы остаются у вас, а оплата – прозрачна
+            и
             понятна.
           </li>
         </ul>
@@ -154,13 +165,13 @@
           <textarea id="description" name="description" rows="5" placeholder="Опишите, в чём именно нужна помощь..."
             required></textarea>
 
-            <div class="consent">
-              <label>
-                <input type="checkbox" id="consent-checkbox" name="consent" required>
-                Я даю согласие на обработку персональных данных и ознакомился с 
-                <a href="privacypolicy.pdf" target="_blank">Политикой конфиденциальности</a>.
-              </label>
-            </div>
+          <div class="consent">
+            <label>
+              <input type="checkbox" id="consent-checkbox" name="consent" required>
+              Я даю согласие на обработку персональных данных и ознакомился с
+              <a href="privacypolicy.pdf" target="_blank">Политикой конфиденциальности</a>.
+            </label>
+          </div>
 
 
           <button type="submit">Отправьте заявку – мы свяжемся с вами в течение 24 часов</button>
@@ -185,13 +196,13 @@
     }
   </script>
 
-<script>
-  function changeLanguage() {
-    const select = document.getElementById('language-select');
-    const selectedValue = select.value;
-    window.location.href = selectedValue;
-  }
-</script>
+  <script>
+    function changeLanguage() {
+      const select = document.getElementById('language-select');
+      const selectedValue = select.value;
+      window.location.href = selectedValue;
+    }
+  </script>
 </body>
 
 </html>
